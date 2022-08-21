@@ -6,7 +6,7 @@ const packageData = JSON.parse(fs.readFileSync(packagePath, 'utf-8'));
 
 const config = {
     "ls": {
-        "name": 'ls',
+        "name": 'ls [type]',
         "alias": "l",
         "description": "查看全部命令 --> 选择并执行"
     },

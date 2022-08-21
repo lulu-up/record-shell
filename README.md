@@ -4,7 +4,7 @@
 
 <hr>
 
-### github : 
+### github : https://github.com/lulu-up/record-shell
 
 ### 详细配置请看文章: 
 

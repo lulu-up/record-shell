@@ -6,7 +6,7 @@ const packageData = JSON.parse(fs.readFileSync(packagePath, 'utf-8'));
 
 const config = {
     "ls": {
-        "name": 'ls [type]',
+        "name": 'ls [-a]',
         "alias": "l",
         "description": "查看全部命令 --> 选择并执行"
     },
@@ -23,12 +23,6 @@ const config = {
 }
 
 program.version(packageData.version)
-
-// -h 展示
-// for (let key in config) {
-//     const item = config[key];
-//     program.option(item.name, item.description)
-// }
 
 module.exports = {
     program,

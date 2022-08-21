@@ -6,7 +6,7 @@
 
 ### github : https://github.com/lulu-up/record-shell
 
-### 详细配置请看文章: 
+### 详细配置请看文章: https://segmentfault.com/a/1190000042353870
 
 <hr>
 

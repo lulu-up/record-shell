@@ -17,13 +17,9 @@ function getShellList() {
 }
 
 function handleExec(command) {
-    // var red = "\033[31m red \033[0m";
-    // console.log('111', red)
-
     console.log(`
     执行:  ${chalk.green(command)}
     `)
-
     child_process.exec(command, function (error, stdout) {
         console.log(`${stdout}`)
         if (error !== null) {
@@ -81,7 +77,6 @@ program
             choices
         }])
 
-        // 可拆开也是个
         const shellOptions = getShellOptions(answer.key)
 
         if (shellOptions.length) {
@@ -136,8 +131,8 @@ program
                 name: item.name,
                 value: i
             })),
-            validate: ((r) => {
-                if (r.length) return true
+            validate: ((choices) => {
+                if (choices.length) return true
             })
         }])
         let data = getShellList()

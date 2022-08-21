@@ -13,8 +13,9 @@
 ### 一、安装
 
 ```shell
-npm install record-shell
+npm install record-shell -g
 ```
+- 要安装在全局
 
 ### 二、使用
 

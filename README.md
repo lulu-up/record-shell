@@ -25,6 +25,11 @@ npm install record-shell -g
   rs ls
 ```
 
+- 查看详细信息, 展示命令详情
+```shell
+  rs ls -a
+
+```
 <hr>
 
 2. 记录命令

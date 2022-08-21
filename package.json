@@ -1,0 +1,19 @@
+{
+  "name": "record-shell",
+  "version": "0.1.0",
+  "description": "record shell",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "rs": "./bin/www"
+  },
+  "author": "lulu",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.1",
+    "commander": "^8.3.0",
+    "inquirer": "^8.2.0"
+  }
+}

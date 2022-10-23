@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const process = require('process');
 const inquirer = require("inquirer");
+const ora = require('ora')
 const chalk = require('chalk') // 要用4版本  5报错
 const child_process = require('child_process');
 
@@ -16,11 +17,16 @@ function getShellList() {
     return data || [];
 }
 
+const spinner = ora('loading');
+
 function handleExec(command) {
+    spinner.stop();
     console.log(`
     执行:  ${chalk.green(command)}
     `)
+    spinner.start()
     child_process.exec(command, function (error, stdout) {
+        spinner.stop()
         console.log(`${stdout}`)
         if (error !== null) {
             console.log('error: ' + error);
